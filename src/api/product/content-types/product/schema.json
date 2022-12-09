@@ -75,12 +75,6 @@
       "target": "api::color.color",
       "inversedBy": "products"
     },
-    "seller": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::seller.seller",
-      "inversedBy": "products"
-    },
     "tags": {
       "type": "relation",
       "relation": "manyToMany",
@@ -96,6 +90,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::review.review"
+    },
+    "seller": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::seller.seller",
+      "inversedBy": "products"
     }
   }
 }
