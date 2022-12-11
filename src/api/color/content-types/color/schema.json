@@ -14,7 +14,9 @@
   "attributes": {
     "name": {
       "type": "string",
-      "default": "sin color"
+      "default": "sin color",
+      "required": true,
+      "unique": true
     },
     "products": {
       "type": "relation",

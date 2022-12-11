@@ -14,13 +14,11 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "email": {
       "type": "email"
-    },
-    "contact_link": {
-      "type": "string"
     },
     "image": {
       "type": "media",
@@ -35,6 +33,19 @@
       "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "seller"
+    },
+    "description": {
+      "type": "text"
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string",
+      "required": true
+    },
+    "web": {
+      "type": "string"
     }
   }
 }

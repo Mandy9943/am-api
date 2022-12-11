@@ -26,24 +26,12 @@
       "type": "media",
       "multiple": true,
       "required": true,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
     },
     "slug": {
       "type": "uid",
       "targetField": "title",
       "required": true
-    },
-    "meta_description": {
-      "type": "text",
-      "required": true,
-      "maxLength": 160
-    },
-    "meta_title": {
-      "type": "string",
-      "required": true,
-      "maxLength": 60
     },
     "agotado": {
       "type": "boolean",
@@ -58,11 +46,7 @@
     },
     "currency": {
       "type": "enumeration",
-      "enum": [
-        "CUP",
-        "USD",
-        "MLC"
-      ],
+      "enum": ["CUP", "USD", "MLC"],
       "default": "CUP",
       "required": true
     },
@@ -77,9 +61,8 @@
     },
     "tags": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::tag.tag",
-      "inversedBy": "products"
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
     },
     "category": {
       "type": "relation",
