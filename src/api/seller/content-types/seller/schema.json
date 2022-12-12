@@ -42,7 +42,10 @@
     },
     "whatsapp": {
       "type": "string",
-      "required": true
+      "required": true,
+      "regex": "^[0-9\\-\\+]{10,11}$",
+      "maxLength": 12,
+      "minLength": 8
     },
     "web": {
       "type": "string"
