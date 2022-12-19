@@ -70,11 +70,6 @@
       "relation": "oneToMany",
       "target": "api::tag.tag"
     },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
-    },
     "reviews": {
       "type": "relation",
       "relation": "oneToMany",
@@ -90,6 +85,12 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "products"
     }
   }
 }
