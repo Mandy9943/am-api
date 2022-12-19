@@ -24,6 +24,13 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "rank": {
+      "type": "decimal",
+      "max": 100,
+      "min": 0,
+      "default": 0,
+      "required": true
     }
   }
 }
