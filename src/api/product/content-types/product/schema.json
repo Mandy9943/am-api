@@ -17,7 +17,7 @@
       "required": true,
       "maxLength": 160,
       "minLength": 5,
-      "unique": true
+      "unique": false
     },
     "quantity": {
       "type": "integer"
